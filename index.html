@@ -7,8 +7,13 @@
     <body>
         <h1>My notebook</h1>
         <h2>Save your ideas!</h2>
-        <input id="search-text" type="text" placeholder="Filter todos">
-        <p class="note">This application was created by Roman Ostash</p>
+        <input id="search-text" type="text" placeholder="Filter notes">
+        <select id="filter-by">
+            <option value="byEdited">Sort by last edited</option>
+            <option value="byCreated">Sort by recently created</option>
+            <option value="alphabetical">Sort alphabetically</option>
+        </select>
+        <div id="notes"></div>
         <p class="note">Note text</p>
         <button id="create-note">Create Note</button>
         <button id="remove-all">Remove All Notes</button>
