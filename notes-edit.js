@@ -9,7 +9,7 @@ let note = notes.find(function (note) {
 })
 
 if (note === undefined) {
-    location.assign('/index.html')
+    location.assign('./index.html')
 }
 
 titleElement.value = note.title
@@ -33,7 +33,7 @@ bodyElement.addEventListener('input', function (e) {
 removeElement.addEventListener('click', function (e) {
     removeNote(note.id)
     saveNotes(notes)
-    location.assign('/index.html')
+    location.assign('./index.html')
 })
 
 window.addEventListener('storage', function (e) {
@@ -44,7 +44,7 @@ window.addEventListener('storage', function (e) {
         })
 
         if (note === undefined) {
-            location.assign('/index.html')
+            location.assign('./index.html')
         }
 
         titleElement.value = note.title
